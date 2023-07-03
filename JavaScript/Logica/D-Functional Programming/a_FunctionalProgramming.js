@@ -23,5 +23,3 @@ const getTea = (numOfCups) => {
 const tea4TeamFCC = getTea(40);
 
 console.log(tea4TeamFCC);
-
-// Probando
