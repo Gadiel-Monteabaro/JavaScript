@@ -7,7 +7,7 @@
   Funciones con efectos secundarios limitados: cualquier cambio o mutación en el estado del programa fuera de la función son cuidadosamente controlados
 */
 
-const prepareTea = () => 'greenTea'; // retorna un string
+const prepareTea = () => "greenTea"; // retorna un string
 
 const getTea = (numOfCups) => {
   const teaCups = [];
@@ -23,3 +23,5 @@ const getTea = (numOfCups) => {
 const tea4TeamFCC = getTea(40);
 
 console.log(tea4TeamFCC);
+
+// Probando
