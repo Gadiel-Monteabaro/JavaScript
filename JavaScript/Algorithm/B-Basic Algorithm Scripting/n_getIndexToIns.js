@@ -1,5 +1,5 @@
 function getIndexToIns(arr, num) {
-  let sortedArray = arr.sort((a, b) => a - b);
+  let sortedArray = arr.sort((a, b) => a - b); // ordenamos el array  
 
   for (let i = 0; i < sortedArray.length; i++) {
     if (num > arr[i - 1] && num <= arr[i]) {

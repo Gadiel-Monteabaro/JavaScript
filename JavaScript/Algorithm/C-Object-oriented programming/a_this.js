@@ -8,4 +8,4 @@ let dog = {
 
 console.log(dog.sayLegs());
 
-// this -> se refiere al objeto con el que el metodo esta asociado.
+// this -> se refiere al objeto, con el que el metodo esta asociado.

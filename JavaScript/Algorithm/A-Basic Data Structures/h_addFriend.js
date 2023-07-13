@@ -24,6 +24,6 @@ function addFriend(userObj, friend) {
   return f;
 }
 
-console.log(addFriend(user, 'Pete'));
+console.log(addFriend(user, 'Gadiel'));
 
 // toma un objeto user y agregua el nombre del argumento friend al arreglo almacenado en user.data.friends

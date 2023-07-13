@@ -1,24 +1,24 @@
 let users = {
   Alan: {
     age: 27,
-    online: true
+    online: true,
   },
   Jeff: {
     age: 32,
-    online: true
+    online: true,
   },
   Sarah: {
     age: 48,
-    online: true
+    online: true,
   },
   Ryan: {
     age: 19,
-    online: true
-  }
+    online: true,
+  },
 };
 
 function isEveryoneHere(userObj) {
-  let n = ['Alan', 'Jeff', 'Sarah', 'Ryan']; // n = nombres
+  let n = ["Alan", "Jeff", "Sarah", "Ryan"]; // n = nombres
   for (let i = 0; i < n.length; i++) {
     if (n[i] in userObj === false) { // userObj.hasOwnProperty(n[i]) => Otra opcion.
       return false;

@@ -11,6 +11,6 @@ function zeroArray(m, n) {
   return newArray;
 }
 
-console.log(zeroArray(3, 3));
+console.log(zeroArray(3, 2));
 
 // genera una matriz m filas con n columnas.

@@ -1,7 +1,7 @@
 function copyMachine(arr, num) {
   let newArr = [];
   while (num >= 1) {
-    newArr.push([...arr]) // operador de propagacion (copia).
+    newArr.push([...arr]); // operador de propagacion (copia).
     num--;
   }
   return newArr;

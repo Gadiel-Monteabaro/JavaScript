@@ -1,6 +1,6 @@
 function titleCase(str) {
-  let palabras = str.split(' ');
-  let frase = '';
+  let palabras = str.split(" ");
+  let frase = "";
   for (let i = 0; i < palabras.length; i++) {
     let palabra = palabras[i];
 
@@ -11,10 +11,10 @@ function titleCase(str) {
         frase += palabra[j].toLowerCase();
       }
     }
-    frase += ' ';
+    frase += " ";
   }
 
-  return frase.trim() // eliminamos el espacio final del string.
+  return frase.trim(); // eliminamos el espacio final del string.
 }
 
 console.log(titleCase("sHoRt AnD sToUt"));

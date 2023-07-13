@@ -1,7 +1,7 @@
 function confirmEnding(str, target) {
   let targetLength = target.length;
-  let match = str.slice(str.length - targetLength, str.length);
-
+  let match = str.slice(str.length - targetLength, str.length); // slice, no modifica el str original.
+  
   let result = match === target ? true : false; // Operador Ternario
 
   return result;
