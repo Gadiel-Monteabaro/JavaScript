@@ -1,19 +1,23 @@
 function Bird(name) {
-    this.name = name;
+  this.name = name;
 }
 
 // todos los objetos de js, tienen un prototype. Ademas el prototype de un objeto tambien es un objeto.
 
-console.log(typeof Bird.prototype);
+typeof Bird.prototype; // Object
+
+Bird.prototype = {
+  color: "Red",
+};
 
 // debido a que prototype es un objeto, puede tener su propio prototype.
 
-Object.prototype.isPrototypeOf(Bird.prototype);
+Object.prototype.isPrototypeOf(Bird.prototype); // True
 
 // Object.prototype es el prototype de Bird.prototype
 
 let duck = new Bird("Donald");
-duck.hasOwnProperty("name");
+console.log(duck.hasOwnProperty("name")); // True
 
 // El método hasOwnProperty se define en Object.prototype al cual se puede acceder con Bird.prototype, al que se puede acceder con duck.
 
