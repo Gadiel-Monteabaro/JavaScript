@@ -1,6 +1,3 @@
-// Uno de los principios de la programacion funcional, es no cambiar las cosas, los cambios conducen a errores. Una funcion, idealmente, debe ser una funcion pura, lo cual no provoca ningun efecto secundario.
-
-// Otro principio de la programacion funcional, es declarar sus dependencias de forma explicita.
 // La variable global
 const watchList = [
   {
@@ -122,8 +119,9 @@ const watchList = [
   },
 ];
 
-//const ratings = [];
-const ratings = watchList.map(function movie(movie) {
+const titleRating = watchList.filter((movie) => movie.imdbRating >= 8);
+
+const filteredList = titleRating.map((movie) => {
   let objectMovieRating = {
     title: movie.Title,
     rating: movie.imdbRating,
@@ -132,4 +130,4 @@ const ratings = watchList.map(function movie(movie) {
   return objectMovieRating;
 });
 
-console.log(JSON.stringify(ratings));
+console.log(filteredList);

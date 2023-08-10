@@ -16,4 +16,4 @@ Array.prototype.myMap = function (callback) {
   return newArray;
 };
 
-[23, 65, 98, 5, 13].myMap((item) => item * 2);
+console.log([23, 65, 98, 5, 13].myMap((item) => item * 2));
