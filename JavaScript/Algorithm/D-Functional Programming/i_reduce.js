@@ -1,6 +1,5 @@
-// Uno de los principios de la programacion funcional, es no cambiar las cosas, los cambios conducen a errores. Una funcion, idealmente, debe ser una funcion pura, lo cual no provoca ningun efecto secundario.
+// Analisis de datos con el metodo reduce
 
-// Otro principio de la programacion funcional, es declarar sus dependencias de forma explicita.
 // La variable global
 const watchList = [
   {
@@ -122,14 +121,28 @@ const watchList = [
   },
 ];
 
-//const ratings = [];
-const ratings = watchList.map(function movie(movie) {
-  let objectMovieRating = {
-    title: movie.Title,
-    rating: movie.imdbRating,
-  };
+// Encontrar la calificacion media (ImdbRating) de las peliculas dirigidas por Christopher Nolan
 
-  return objectMovieRating;
-});
+// Forma de resolver, que se me ocurrio a mi.
+function getRating1(watchList, director) {
+  let filterDirectorMovies = watchList.filter(
+    (movie) => movie.Director === director
+  );
+  let arrImdbRating = filterDirectorMovies.reduce(
+    (ac, el) => ac + Number(el.imdbRating),
+    0
+  );
+  return arrImdbRating / filterDirectorMovies.length;
+}
 
-console.log(JSON.stringify(ratings));
+// limpieza de codigo.
+function getRating2(watchList) {
+  return (
+    watchList
+      .filter((movie) => movie.Director === "Christopher Nolan")
+      .reduce((ac, el) => ac + Number(el.imdbRating), 0) /
+    watchList.filter((movie) => movie.Director === "Christopher Nolan").length
+  );
+}
+
+console.log(getRating2(watchList));

@@ -8,7 +8,7 @@ function mutation(arr) {
       return false;
     }
   }
-  return true
+  return true;
 }
 
 console.log(mutation(["hello", "hey"]));

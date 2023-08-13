@@ -18,4 +18,4 @@ Array.prototype.myFilter = function (callback) {
   return newArray;
 };
 
-console.log([23, 65, 98, 5, 13].myFilter((item) => item % 2));
+console.log([23, 65, 98, 5, 13].myFilter((item) => item > 20));

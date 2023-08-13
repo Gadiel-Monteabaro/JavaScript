@@ -1,5 +1,5 @@
 function sliceArray(anim, beginSlice, endSlice) {
-  let newArray = anim.slice(beginSlice, endSlice);
+  const newArray = anim.slice(beginSlice, endSlice);
   return newArray;
 }
 
@@ -12,4 +12,6 @@ function nonMutatingSplice(cities) {
   return cities.slice(0, 3);
 }
 
-nonMutatingSplice(["Chicago", "Delhi", "Islamabad", "London", "Berlin"]);
+console.log(
+  nonMutatingSplice(["Chicago", "Delhi", "Islamabad", "London", "Berlin"])
+);

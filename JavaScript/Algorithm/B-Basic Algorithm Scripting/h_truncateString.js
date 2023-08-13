@@ -6,6 +6,6 @@ function truncateString(str, num) {
   return c;
 }
 
-console.log(truncateString("A-tisket a-tasket A green and yellow basket", 20));
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 60));
 
 // recorta una cadena (primer argumento) si es más larga que la longitud máxima proporcionada (segundo argumento).

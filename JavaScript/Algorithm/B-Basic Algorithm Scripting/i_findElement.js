@@ -4,7 +4,6 @@ function findElement(arr, func) {
   for (let i = 0; i < arr.length; i++) {
     n = func(arr[i]);
     if (n === true) {
-      console.log(a);
       a.push(arr[i]);
     }
   }
