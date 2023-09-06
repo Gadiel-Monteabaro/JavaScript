@@ -6,4 +6,4 @@ function spinalCase(str) {
     .toLowerCase();
 }
 
-console.log(spinalCase("This Is Spinal Tap"));
+spinalCase("This Is Spinal Tap");

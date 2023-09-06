@@ -1,3 +1,4 @@
+// El par de hebras del ADN esta formado por pares de nucleobases. Los pares de base son representados por los caracteres AT y CG, que forman bloques de doble hélix ADN.
 function pairElement(str) {
   let newArray = [];
   for (let i = 0; i < str.length; i++) {
@@ -20,7 +21,7 @@ function pairElement(str) {
   return newArray;
 }
 
-console.log(pairElement("ATCGA"));
+pairElement("ATCGA");
 
 // Otra solucion.(No mia)
 function pairElement(str) {

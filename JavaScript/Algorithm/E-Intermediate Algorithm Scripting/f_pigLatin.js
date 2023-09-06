@@ -1,3 +1,8 @@
+/*
+  - Si una palabra comienza con una consonante, toma la primer consonante o grupo de consonantes, muévela al final de la palabra, y añade ay a ella.
+
+  - Si una palabra comienza con una vocal, solo añade way al final.
+*/
 function translatePigLatin(str) {
   const reg = /^[aeiou]/.test(str);
 

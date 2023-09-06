@@ -15,4 +15,4 @@ function myReplace(str, before, after) {
     .join(" ");
 }
 
-console.log(myReplace("Let us go to the store", "store", "mall"));
+myReplace("Let us go to the store", "store", "mall");

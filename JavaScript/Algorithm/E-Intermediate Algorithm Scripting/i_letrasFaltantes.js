@@ -1,3 +1,4 @@
+// Encuentra la letra que falta en la siguiente cadena de letras y devuélvela.
 function fearNotLetter(str) {
   let currCharCode = str.charCodeAt(0);
   let missing = undefined;
@@ -13,4 +14,5 @@ function fearNotLetter(str) {
 
   return missing;
 }
-console.log(fearNotLetter("abce"));
+
+fearNotLetter("abce");

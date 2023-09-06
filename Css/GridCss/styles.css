@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/*
+  
+  grid-template -> propiedad que permite combinar grid-template-columns y grid-template-rows. (/) -> separador
+  grid-column -> propiedad que permite combinar grid-column-start, grid-column-end.
+  grid-area -> propiedad que permite combinar grid-row-start, grid-column-start, grid-row-end, grid-column-end. (/) -> separador
+  
+  En grid, podemos utilizar align-items, justify-content y order, propiedades tambien vistas en FlexBox.
+*/
+
+.container {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.items {
+  border: 1px solid;
+  padding: 16px;
+}
+
+.img-container {
+  width: 100%;
+  height: 250px;
+  margin-top: 16px;
+}
+
+img {
+  object-fit: cover;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 850px) {
+  .container {
+    padding: 8px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 650px) {
+  .img-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 8px;
+    grid-template-columns: 1fr;
+  }
+}

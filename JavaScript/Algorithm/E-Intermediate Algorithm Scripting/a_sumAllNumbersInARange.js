@@ -7,4 +7,4 @@ function sumAll(arr) {
   return sum;
 }
 
-console.log(sumAll([1, 4])); // 10
+sumAll([1, 4]);
